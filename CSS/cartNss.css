@@ -1,0 +1,165 @@
+/* Ok */
+/* Account */
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+.header__none-user{
+    padding: 0;
+}
+
+.modal-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-body {
+    z-index: 3;
+    margin: auto;
+}
+.account-form {
+    position: relative;
+    width: 500px;
+    background-color: #f6f4f0;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: ModalfadeIn ease 0.5s;
+}
+.close {
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.close-btn {
+    padding: 8px 12px;
+}
+
+
+.account-form__container {
+    padding: 32px;
+}
+
+.account-form__header {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.account-form__heading {
+    color: #EE4D2D;
+    font-size: 28px;
+}
+
+.account-form__form {
+    margin-top: 12px;
+}
+
+.account-form__box {
+    height: 40px;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.account-form__box-icon {
+    color: #999;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.account-form__input {
+    outline: none;
+    border: none;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    padding: 0 24px;
+    background-color: #f6f4f0;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+}
+
+.account-form__input:focus {
+    border-bottom-color: #888;
+}
+
+.account-form__box-showpass {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.account-form__btn {
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    background-color: #EE4D2D;
+    color: #fff;
+    border-radius: 30px;
+    padding: 16px 0;
+    margin: 12px 0;
+}
+
+.account-form__btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.account-form__policy {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.account-form__policy-lable {
+    margin-left: 2px;
+}
+
+.account-form__policy-text {
+    font-size: 12px;
+}
+
+.account-form__policy-info {
+    font-weight: 500;
+    color: #EE4D2D;
+}
+
+.account-form__switch {
+    margin-top: 24px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.account-form__switch-btn {
+    color: #EE4D2D;
+    cursor: pointer;
+}
+.fa-solid .fa-user{
+    height: 50px;
+    width: 50px;
+    padding: 50px;
+    margin: 50px ;
+}
+/* Sign up */
+#sign-up {
+    display: none;
+}
+
+
+
+
+

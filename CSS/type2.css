@@ -1,0 +1,389 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style-type: none;
+}
+
+.menu li {
+  padding: 20px 50px;
+}
+.menu button{
+  color: black;
+}
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  color: black;
+  background: rgb(249, 173, 173);
+  position: relative;
+}
+.menu {
+  display: flex;
+  padding: 20px;
+}
+
+.other {
+  display: flex;
+}
+.other li button :first-child:hover{
+  color:#ccc;
+}
+.other > li {
+  padding: 30px 30px;
+}
+a:hover {
+  color: rgb(20, 46, 131);
+}
+button {
+  border: none;
+  background: none;
+}
+button:hover {
+  color: rgb(20, 46, 131);
+}
+.hidden {
+  display: none;
+  /* position: absolute; */
+}
+main {
+  flex: 1;
+}
+
+main div li:first-of-type {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.overplay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Màu nền mờ đậm hơn */
+  z-index: 1000;
+  display: flex; /* Hiển thị flexbox */
+  justify-content: center;
+  align-items: center;
+  display: none; /* Ẩn popup ban đầu */
+}
+.no-scroll {
+  overflow: hidden;
+}
+.k1 {
+  background: white;
+  text-align: center;
+  border-radius: 20px;
+}
+.list-hover:hover {
+  color: unset;
+  transform: scale(1.1);
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.fontdiv {
+  display: contents;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+th {
+  text-align: left;
+}
+.tbadd p {
+  text-align: left;
+}
+/* -------update-------- */
+/* Nút sửa */
+button.edit {
+  background-color: #28a745; /* Màu xanh lá */
+}
+
+button.edit:hover {
+  background-color: #218838;
+}
+
+/* Nút khóa */
+button.lock {
+  background-color: #007bff; /* Màu xanh dương */
+}
+
+button.lock:hover {
+  background-color: #0056b3;
+}
+
+/* Nút xóa */
+button.delete {
+  background-color: #dc3545; /* Màu đỏ */
+}
+#lista tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+#table_account {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+}
+#table_account th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+}
+#table_account td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+button.delete:hover {
+  background-color: #c82333;
+}
+button {
+  border: none;
+  padding: 8px 12px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* ------------------- */
+.addaccount {
+  flex: 1;
+  border-radius: 5px;
+  min-width: 150px;
+  background: rgb(40, 167, 6);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+.form_table {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+
+  border-radius: 8px;
+  overflow: hidden;
+}
+.form_table thead th {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+.form_table td {
+  width: 50%;
+  padding: 15px;
+  vertical-align: middle;
+}
+.form_table td:first-child {
+  text-align: right;
+  font-size: 20px;
+}
+.form_table td input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #7d7c7c;
+
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s;
+}
+.form_table button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.first-ptn {
+  background-color: #4caf50;
+  color: white;
+}
+.secon-ptn {
+  background-color: #f44336;
+  color: white;
+}
+.form_createa {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: rgb(241, 241, 241);
+
+  border-radius: 8px;
+  overflow: hidden;
+}
+.form_createa td {
+  padding: 12px;
+  text-align: center;
+}
+.form_createa button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form_createa thead th {
+  color: #4caf50;
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+.form_createa input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #7d7c7c;
+
+  background-color: rgb(241, 241, 241);
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s;
+}
+.form_create tfoot:first-child {
+  text-align: right;
+}
+.search {
+  position: relative;
+  width: 80%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-color: inherit;
+}
+.enter_search {
+  position: absolute;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  width: 50px;
+  height: 50px;
+  right: 0;
+}
+#dropdownmenu {
+  position: absolute;
+  top: 70%;
+  right: 3%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 500;
+}
+#logout {
+  color: white;
+  background: #218838;
+}
+
+#logout:hover {
+  background: #28a745;
+}
+.search-container {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+  border-bottom: 1px solid #ccc;
+}
+#change__pass {
+  background: #ccc;
+  border: none;
+  color: black;
+}
+#change__pass:hover {
+  background: #ddd;
+}
+#change_pass tfoot {
+  text-align: center;
+}
+#change_pass table {
+  width: 400px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: fadeIn 0.3s ease-in-out;
+}
+#change_pass button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#change_pass thead th {
+  text-align: center;
+  color: #4caf50;
+  padding: 12px;
+}
+#change_pass td {
+  width: 50%;
+  padding: 15px;
+  vertical-align: middle;
+  align-items: center;
+}
+#change_pass input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #7d7c7c;
+
+  background-color: rgb(241, 241, 241);
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+
+/* Style của quản lý sản phẩm */
+/* --------------------------------------------------- */
+.product-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+#deleteModal .modal-dialog {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - 1rem);
+}
+
+@media (min-width: 576px) {
+  #deleteModal .modal-dialog {
+    min-height: calc(100% - 3.5rem);
+  }
+}
+.tableHead th {
+  text-align: center;
+}
+/* --------------------------------------------------- */

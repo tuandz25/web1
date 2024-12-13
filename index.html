@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FShop</title>
+  <link rel="stylesheet" href="CSS/pageHome.css">
+  <link rel="stylesheet" href="CSS/cartNss.css">
+  <link rel="stylesheet" href="CSS/font/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons/css/line.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container1">
+      <nav class="nav" style="justify-content: space-between;">
+        <div class="section-left">
+          <a href="#">Kênh Người Bán</a> |
+          <a href="#">Trở thành Người bán</a> |
+        </div>
+
+        <div class="section-right" >
+          <a href="" class="icontt" title="thông báo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10%" height="25%" fill="currentColor" class="bi bi-bell"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6" />
+            </svg>|
+          </a>
+
+          <a href="" class="icontt" title="Hỗ trợ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10%" height="25%" fill="currentColor"
+              class="bi bi-question-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+              <path
+                d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+            </svg>|
+          </a>
+
+          <a class="a-icon"  href="javascript:void(0);" id="a_icon" style="margin-right: 20%;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+          </a>
+
+          <a onclick="document.getElementById('account__modal').style.display='flex'" id="user_name" class="header__none-user" >
+            <i class="fa-solid fa-user" ></i>
+          </a>
+
+          <!-- USER -->
+          <div class="header__user-group">
+            <div id="overlay" class="overlay hidden" ></div>
+
+            <div class="header__user" >
+              <span class="header__user-name" ></span>
+              <div class="header__group-menu " id="header__group-menu" >
+                <a href="./flleHTML/order.html" id="view-orders-button" class="header__user-order">Đơn hàng của bạn</a>
+                
+                <div id="log-out" class="header__log-out" onclick="LogOut()"><a href="" class="logOut">Đăng xuất</a></div>
+              </div>
+            </div>
+          </div>
+
+          <a class="icon_menu" id="icon-menu" style="margin-left: 20%;" title="Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Search-->
+    <div class="search-filter hidden" id="search-filter">
+      <a href="index.html" style="margin-left: 5%"><img src="images/logo2.png" alt="logo"></a>
+      <h1 style="color: rgba(12, 6, 6, 0.874);font-size: clamp(10%,2vw,100%);">SHOP</h1>
+      <div class="search-container">
+        <input type="text" onclick="toggleAdvanced()" id="search-bar" placeholder="Tìm kiếm sản phẩm...">
+        <button onclick="advancedSearch()">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search"
+            viewBox="-7 -7 30 30">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+          </svg>
+        </button>
+      </div>
+      <div class="cart-icon">
+        <i class="fa-solid fa-cart-shopping" id="cartIcon" onclick="viewCart()" style="padding: 5px;"></i>
+        <!-- <span id="cart-count">0</span> Số lượng sản phẩm trong giỏ --> 
+      </div>
+      <div class="advanced-Search hidden" id="advanced-Search">
+        <select id="category" >
+          <option value="">Loại</option>
+          <option value="MINI">MINI</option>
+          <option value="ĐỨNG">ĐỨNG</option>
+          <option value="TREO TƯỜNG">TREO TƯỜNG</option>
+        </select>
+        <input type="number" id="min-price" placeholder="Giá tối thiểu">
+        <input type="number" id="max-price" placeholder="Giá tối đa">
+      </div>
+    </div>
+    </div>
+
+    
+  </header>
+
+  <!-- Account Modal -->
+  <div id="account__modal" class="modal" style="position: fixed;"
+  onclick="document.getElementById('account__modal').style.display='none'">
+  <div class="modal-overlay"></div>
+
+  <div class="modal-body">
+    <!-- Sign up -->
+    <div id="sign-up" class="account-form">
+      <span onclick="document.getElementById('account__modal').style.display='none'" class="close">
+        <i class="close-btn fa-solid fa-xmark" style="color: #6c6464;"></i>
+      </span>
+      <form class="account-form__container" onsubmit="return createAccount()">
+        <div class="account-form__header">
+          <h3 class="account-form__heading">Đăng ký</h3>
+        </div>
+
+        <div class="account-form__form">
+          <div class="account-form__box">
+            <i class="account-form__box-icon uil uil-user"></i>
+            <input id="user-name" type="text" class="account-form__input" placeholder="Tên người dùng" required>
+          </div>
+
+          <div class="account-form__box">
+            <i class="account-form__box-icon uil uil-envelope"></i>
+            <input id="email" type="email" class="account-form__input" placeholder="Email của bạn" required>
+            <span class="error email"></span>
+          </div>
+
+          <div class="account-form__box">
+            <i class="account-form__box-icon uil uil-lock-alt"></i>
+            <input id="true-password" type="password" class="account-form__input password"
+              placeholder="Nhập mật khẩu" required>
+          </div>
+
+          <div class="account-form__box">
+            <i class="account-form__box-icon uil uil-lock-alt"></i>
+            <input id="re-password" type="password" class="account-form__input password"
+              placeholder="Nhập lại mật khẩu" required>
+            <span class="account-form__box-showpass sign-up-showpass" onclick="showPassword()">
+              <i class="uil uil-eye-slash show-hide"></i>
+            </span>
+            <span class="error password"></span>
+          </div>
+        </div>
+
+        <div class="account-form__policy">
+          <input type="checkbox" name="" id="policy_check" required>
+          <label for="policy_check" class="account-form__policy-lable">
+            <p class="account-form__policy-text">
+              <span style="color: #847b7b;">Tôi đồng ý với </span>
+
+              <strong class="account-form__policy-info">Điều khoản dịch vụ</strong>
+              &
+              <strong class="account-form__policy-info">Chính sách bảo mật</strong>
+            </p>
+          </label>
+        </div>
+
+        <button class="account-form__btn" type="submit" style="color: orange;background-color: #fff; ">Đăng
+          ký</button>
+        <div class="account-form__switch">
+          <span style="color: #827a7a;">Bạn đã có tài khoản?</span>
+          <span id="sign-in-btn" class="account-form__switch-btn" onclick="showSignIn()">Đăng nhập</span>
+        </div>
+      </form>
+    </div>
+
+    <!-- Sign in -->
+    <div id="sign-in" class="account-form">
+      <span onclick="document.getElementById('account__modal').style.display='none'" class="close">
+        <i class="close-btn close fa-solid fa-xmark" style="color: #6c6464;"></i>
+      </span>
+      <form class="account-form__container" onsubmit="LogIn(); return false" id="loginForm">
+        <div class="account-form__header">
+          <h3 class="account-form__heading">Đăng nhập</h3>
+        </div>
+
+        <div class="account-form__form">
+          <div class="account-form__box">
+            <i class="account-form__box-icon uil uil-envelope"></i>
+            <input id="sign-in-email" type="email" class="account-form__input" placeholder="Email của bạn"
+              required>
+          </div>
+
+          <div class="account-form__box">
+            <i class="account-form__box-icon uil uil-lock-alt"></i>
+            <input id="sign-in-password" type="password" class="account-form__input" placeholder="Mật khẩu"
+              required>
+            <span class="account-form__box-showpass sign-in-showpass" onclick="showSignInPassword()">
+              <i class="uil uil-eye-slash show-hide"></i>
+            </span>
+          </div>
+        </div>
+        <button class="account-form__btn">
+          <p style="padding-right: 10px;" onclick="login()">Đăng nhập</p>
+        </button>
+
+        <div class="account-form__switch">
+          <span style="color: #6c6464;">Bạn chưa có tài khoản?</span>
+
+          <span id="sign-up-btn" class="account-form__switch-btn" onclick="showSignUp()">Đăng ký</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+  <div class="banner" >
+    <img id="banner" style="height: 50%; width: 100%;text-align: center;" src="images/banner.png" alt="Promotional Banner">
+  </div>
+  
+  <div id="cart-container">
+    <!-- Giỏ hàng sẽ được hiển thị tại đây -->
+  </div>
+  <img id="emptyCartImage" src="images/cart-empty.png" alt="Empty Cart Image"
+    style="display: none; height: auto; min-width: 40%;object-fit: cover; margin : 0 20% 0 30% ;">
+  <div id="total-amount" style="font-weight: bold; margin-top: 20px;"></div>
+
+  <!-- Product List -->
+  <main style="display: flex;">
+    <!-- danh sách sản phẩm -->
+    <div id="product-list" class="product-list">
+      <div class="products"></div>
+    </div>
+  </main>
+
+  <div id="product-details" style="display: none;"> 
+    <!-- Thông tin chi tiết sản phẩm sẽ được hiển thị ở đây --> 
+  </div>
+
+  <div id="related-products">   
+  </div>
+
+  <!-- nút chuyển trang -->
+  <div id="pagination" class="pagination">
+    <button class="prev" onclick="prevPage()"></button>
+    <span class="page-info"></span>
+    <button class="next" onclick="nextPage()"></button>
+  </div>
+
+  <!-- Phần cuối trang -->
+  <footer class="footer">
+    <div class="footer-section">
+      <h2>TIỆN ÍCH <span class="highlight">Blog</span></h2>
+      <div class="social-icons">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20%" height="20%" fill="currentColor"
+            class="bi bi-facebook" viewBox="0 0 16 16">
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+          </svg>
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20%" height="20%" fill="currentColor"
+            class="bi bi-instagram" viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-section">
+      <h3>ĐÁNH GIÁ</h3>
+      <ul>
+        <li><a href="#">Tối giản, cổ điển, công nghiệp, hoặc hiện đại.</a></li>
+        <li><a href="#">Đánh giá về độ bền.</a></li>
+        <li><a href="#">Số lượng kệ và khả năng điều chỉnh kệ.</a></li>
+        <li><a href="#">Sản phẩm có mức giá hợp lý, nhưng vẫn đảm bảo độ bền và tiện dụng.</a></li>
+        <li><a href="#">Đánh giá tích cực thường dành cho các sản phẩm có hướng dẫn rõ ràng, lỗ khoan sẵn và phụ kiện
+            chất lượng.</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>PHỔ BIẾN</h3>
+      <ul>
+        <li><a href="#">Phù hợp với gia đình có trẻ nhỏ.</a></li>
+        <li><a href="#">Phần lớn các tủ sách có bảo hành từ 6 tháng đến 2 năm.</a></li>
+        <li><a href="#">Một số mẫu có thiết kế mở, hoặc có cửa kính để bảo vệ sách khỏi bụi.</a></li>
+        <li><a href="#">Gỗ tự nhiên có tuổi thọ lâu dài và khả năng chịu ẩm tốt hơn.</a></li>
+        <li><a href="#">Khả năng lắp ráp dễ dàng.</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>TRUY CẬP</h3>
+      <ul>
+        <li><a href="#">Dánh giá.</a></li>
+        <li><a href="#">Internet.</a></li>
+        <li><a href="#">Mạng xã hội.</a></li>
+      </ul>
+    </div>
+
+  </footer>
+
+  
+  <!-- <script>
+    window.onload = function () {
+      var url = window.location.href;
+      var s = url.split('?');
+
+      if (s[2] == undefined) {
+        if (s[1] == 'order') {
+          showOrderPage();
+        } else if (s[1] == 'cart') {
+          showCartProduct();
+        } else if (s[1] == 'search') {
+          showSearchProduct(1);
+        } else {
+          showProduct(1);
+        }
+      } else {
+        showProductDetail();
+      }
+    }
+  </script> -->
+  <script src="JS/account.js"></script>
+  <script src="JS/productManager.js"></script>
+  <script src="JS/app.js"></Script>
+  <script src="JS/cart.js"></script>
+  <script src="JS/order.js"></script>
+</body>
+
+</html>

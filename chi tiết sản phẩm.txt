@@ -1,0 +1,86 @@
+chi tiết:
+
+*SP 1:Tủ sách XƯƠNG RỒNG
+-Cao:41cm.
+-dài:40cm.
+-Rộng:17cm.
+-giá:100000 vnd.
+-loại:MINI.
+
+*SP 3:Tủ sách Barrett
+-Cao:170cm.
+-Rộng:28cm.
+-dài:90cm.
+-Giá:3330000 vnd.
+-loại:ĐỨNG.
+
+*SP 4:Tủ sách BURRA
+-Cao:150cm.
+-dài:100cm.
+-Rộng:30cm.
+-Giá:2688000 vnd.
+-loại:ĐỨNG.
+
+*SP 5:Tủ sách CL180-06
+-Cao:180cm.
+-Dài:60cm.
+-Rộng:30.
+-Giá:1310000 vnd.
+-loại:ĐỨNG.
+
+*SP 6:Tủ sách KT07
+-Cao:200cm.
+-Dài:100cm.
+-Rộng:35cm.
+-Giá:2200000 vnd.
+-loại:ĐỨNG.
+
+*SP 7:Tủ sách KIYOSAKI
+-Cao:97cm.
+-Dài:97cm.
+-Rộng:20cm.
+-Giá:1353000 vnd.
+-Loại:TREO TƯỜNG.
+
+*SP 8:Tủ sách KT335
+-Cao:20cm.
+-Dài:80cm.
+-Rộng:20cm.
+-Giá:973500 vnd.
+-Loại:TREO TƯỜNG.
+
+*SP 9:Tủ sách GHS-2641
+-Cao:120cm.
+-Dài:80cm.
+-Rộng:26cm.
+-Giá:2900000 vnd.
+-Loại:ĐỨNG.
+
+*SP 10:Tủ sách Combo 2 mẫu GHS-2644
+-Cao:
+-Dài:600cm,700cm.
+-Rộng:1420cm,1010cm.
+-Giá:7200000 vnd.
+-Loại:ĐỨNG.
+
+*SP 11:Tủ sách GHS-2565
+-Cao:220cm.
+-Dài:150cm,đáy 70cm.
+-Rộng:30cm.
+-Giá:5200000 vnd.
+-Loại:ĐỨNG.
+
+*SP 13:Tủ sách AP281
+-Cao:170cm.
+-Dài:50cm.
+-Rộng:50cm.
+-Giá:1218000 vnd.
+-Loại:ĐỨNG.
+
+*SP 14:Tủ sách AP280
+-Cao:170cm.
+-Dài:50cm.
+-Rộng:50cm.
+-Giá:1120000 vnd.
+-Loại:ĐỨNG.
+

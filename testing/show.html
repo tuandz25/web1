@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <script src="../JS/cart.js" defer></script>
+    <script src="./anotherjs.js" defer></script> <!-- File JavaScript khác -->
+</head>
+<body>
+    <h1>Giỏ hàng của bạn</h1>
+    <div id="cart-container"></div>
+
+    <script>
+        // Trong anotherFile.js, bạn có thể lấy dữ liệu giỏ hàng như sau:
+        document.addEventListener("DOMContentLoaded", function () {
+            const cartData = localStorage.getItem("cart");
+
+            if (cartData) {
+                const cartItems = JSON.parse(cartData);
+                console.log("Dữ liệu giỏ hàng:", cartItems);
+
+                // Hiển thị giỏ hàng trên trang
+                const cartContainer = document.getElementById("cart-container");
+                cartItems.forEach(item => {
+                    const itemDiv = document.createElement("div");
+                    itemDiv.textContent = `${item.name} - Số lượng: ${item.quantity}`;
+                    cartContainer.appendChild(itemDiv);
+                });
+            } else {
+                console.log("Giỏ hàng trống.");
+            }
+        });
+    </script>
+</body>
+</html>
